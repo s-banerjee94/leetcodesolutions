@@ -5,7 +5,7 @@ public class CountSubarraysWithFixedBounds {
 		int minIndex = -1;
 		int maxIndex = -1;
 		int culpritIndex = -1;
-		int ans = 0;
+		long ans = 0;
 		int smallIndex = -1;
 		for (int i = 0; i < nums.length; i++) {
 			if (nums[i] == minK)
