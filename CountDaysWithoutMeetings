@@ -1,0 +1,19 @@
+class CountDaysWithoutMeetings {
+    public int countDays(int days, int[][] meetings) {
+        Arrays.sort(meetings, (a, b) -> Integer.compare(a[0], b[0]));
+		List<int[]> newMeetingDays = new ArrayList<>();
+		for (int[] meeting : meetings) {
+			if (newMeetingDays.isEmpty() || meeting[0] > newMeetingDays.get(newMeetingDays.size() - 1)[1])
+				newMeetingDays.add(meeting);
+			else {
+				newMeetingDays.get(newMeetingDays.size() - 1)[1] = Math
+						.max(newMeetingDays.get(newMeetingDays.size() - 1)[1], meeting[1]);
+			}
+		}
+		int totalMeetingDays = 0;
+		for(int[] meeting : newMeetingDays) {
+			totalMeetingDays += meeting[1] - meeting[0] + 1;
+		}
+		return days - totalMeetingDays;
+    }
+}
