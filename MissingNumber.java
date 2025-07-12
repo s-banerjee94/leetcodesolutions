@@ -1,5 +1,3 @@
-package leetcode;
-
 public class MissingNumber {
 	public int missingNumber(int[] nums) {
 		int sum = 0;

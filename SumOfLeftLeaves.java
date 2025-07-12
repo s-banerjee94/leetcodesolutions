@@ -1,5 +1,3 @@
-package leetcode;
-
 public class SumOfLeftLeaves {
 	public int sumOfLeftLeaves(TreeNode root) {
 		return dfs(root, root);

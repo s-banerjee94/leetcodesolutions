@@ -1,5 +1,3 @@
-package leetcode;
-
 public class FindTheTownJudge {
 	public int findJudge(int n, int[][] trust) {
 		int[] trusts = new int[n + 1];

@@ -1,5 +1,3 @@
-package leetcode;
-
 public class RemoveNthNodeFromEndOfList {
 	public ListNode removeNthFromEnd(ListNode head, int n) {
 		if (head == null)

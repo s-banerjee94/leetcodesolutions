@@ -1,5 +1,3 @@
-package leetcode;
-
 public class MiddleOfTheLinkedList {
 	public ListNode middleNode(ListNode head) {
 		ListNode slow = head;

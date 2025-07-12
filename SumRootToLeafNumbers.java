@@ -1,5 +1,3 @@
-package leetcode;
-
 public class SumRootToLeafNumbers {
 	public int sumNumbers(TreeNode root) {
 		return dfs(root, 0);

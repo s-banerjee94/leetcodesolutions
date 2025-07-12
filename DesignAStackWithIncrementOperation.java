@@ -1,5 +1,3 @@
-package leetcode;
-
 public class DesignAStackWithIncrementOperation {
 	int[] stack;
 	int currentSize;

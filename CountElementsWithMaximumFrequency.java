@@ -1,5 +1,3 @@
-package leetcode;
-
 import java.security.KeyStore.Entry;
 import java.util.HashMap;
 import java.util.Map;

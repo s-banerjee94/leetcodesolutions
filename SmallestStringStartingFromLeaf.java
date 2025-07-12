@@ -1,5 +1,3 @@
-package leetcode;
-
 public class SmallestStringStartingFromLeaf {
 	private String result;
 

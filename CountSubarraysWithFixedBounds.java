@@ -1,5 +1,3 @@
-package leetcode;
-
 public class CountSubarraysWithFixedBounds {
 	public long countSubarrays(int[] nums, int minK, int maxK) {
 		int minIndex = -1;

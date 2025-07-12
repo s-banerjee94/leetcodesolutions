@@ -1,5 +1,3 @@
-package leetcode;
-
 public class ContainerWithMostWater {
 	public int maxArea(int[] heights) {
 		int maxArea = 0;

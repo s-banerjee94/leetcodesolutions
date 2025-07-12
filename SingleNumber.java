@@ -1,5 +1,3 @@
-package leetcode;
-
 public class SingleNumber {
 	public int singleNumber(int[] nums) {
 		// Initialize the result variable to 0

@@ -1,5 +1,3 @@
-package leetcode;
-
 public class AddOneRowToTree {
 	public TreeNode addOneRow(TreeNode root, int val, int depth) {
 		if (depth == 1) {

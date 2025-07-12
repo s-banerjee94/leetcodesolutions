@@ -1,5 +1,3 @@
-package leetcode;
-
 public class MinimumLengthOfStringAfterDeletingSimilarEnds {
 	public int minimumLength(String s) {
 		int left = 0;

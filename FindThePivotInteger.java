@@ -1,5 +1,3 @@
-package leetcode;
-
 public class FindThePivotInteger {
 	public int pivotInteger(int n) {
 		int start = 1;

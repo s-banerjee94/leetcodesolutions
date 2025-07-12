@@ -1,5 +1,3 @@
-package leetcode;
-
 public class LinkedListCycle {
 	public boolean hasCycle(ListNode head) {
 		ListNode pre = head;
