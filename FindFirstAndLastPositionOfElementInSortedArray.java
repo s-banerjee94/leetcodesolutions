@@ -1,24 +1,24 @@
 public class FindFirstAndLastPositionOfElementInSortedArray {
     public int[] searchRange(int[] nums, int target) {
-        return new int[] {findFirstPosition(nums, target), findLastPosition(nums, target)};
+        return new int[]{findFirstPosition(nums, target), findLastPosition(nums, target)};
     }
 
     private int findLastPosition(int[] nums, int target) {
         int index = -1;
-         int left = 0;
-         int right  = nums.length - 1;
-         while (left <= right) {
-             int mid = left + (right - left) / 2;
-             if(target == nums[mid]) {
-                 index = mid ;
-                 left = mid + 1;
-             } else  if (target < nums[mid]) {
-                 right = mid - 1;
-             } else {
-                 left = mid + 1;
-             }
-         }
-         return index;
+        int left = 0;
+        int right = nums.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (target == nums[mid]) {
+                index = mid;
+                left = mid + 1;
+            } else if (target < nums[mid]) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return index;
     }
 
     private int findFirstPosition(int[] nums, int target) {
@@ -26,10 +26,10 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
         int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            if(nums[mid] == target) {
+            if (nums[mid] == target) {
                 index = mid;
                 right = mid - 1;
-            } else if(target < nums[mid]) {
+            } else if (target < nums[mid]) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
