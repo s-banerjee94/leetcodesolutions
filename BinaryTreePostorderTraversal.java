@@ -9,7 +9,7 @@ public class BinaryTreePostorderTraversal {
     }
 
     private void traverse(TreeNode root, List<Integer> result) {
-        if(root == null)
+        if (root == null)
             return;
         traverse(root.left, result);
         traverse(root.right, result);
