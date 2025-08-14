@@ -26,6 +26,5 @@ public class AverageOfLevelsInBinaryTree {
             result.add(sum / (double) size);
         }
         return result;
-
     }
 }
